@@ -30,12 +30,9 @@ namespace XUnitTests.Insulation
         /// <summary>
         /// Тест-кейс 1
         /// </summary>
-        [InlineData("1111")]
-        [InlineData("2222")]
-        [InlineData("3333")]
-        [InlineData("4444")]
+        [InlineData("1111", "222")]
         [Theory]
-        public void ParameterizedTests1_TestCase1(string element)
+        public void ParameterizedTests1_TestCase1(string element, string element2)
         {
             _testOutputHelper.WriteLine($"{GetType().Name}__{MethodBase.GetCurrentMethod().Name}");
             _testOutputHelper.WriteLine($"element: {element}");

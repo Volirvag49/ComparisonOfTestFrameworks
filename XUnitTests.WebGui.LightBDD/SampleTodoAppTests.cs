@@ -9,6 +9,8 @@ namespace NUnitTests.WebGui.LightBDD
 {
     public class Tests : FeatureFixture
     {
+
+
         #region Поля
 
         /// <summary>
@@ -35,16 +37,6 @@ namespace NUnitTests.WebGui.LightBDD
                 _ => Then_New_Item_IsCorrect("itemName"));
         }
 
-        [Scenario]
-        public void WhenCreatedNewItem_Then_ItemsNameAreEqual_2()
-        {
-            Runner.RunScenario(
-                _ => Given_BrowserDriver(new ChromeDriver()),
-                _ => Given_Opened_Browser("https://lambdatest.github.io/sample-todo-app/"),
-                _ => When_NewItemCreated("itemName2"),
-                _ => Then_New_Item_IsCorrect("itemName2"));
-        }
-
         #endregion
 
         #region Приватные методы
@@ -62,7 +54,6 @@ namespace NUnitTests.WebGui.LightBDD
             // 2 | setWindowSize | 1294x1400 | 
             _driver.Manage().Window.Size = new Size(1294, 1400);
         }
-
 
         private void When_NewItemCreated(string newItemName)
         {
