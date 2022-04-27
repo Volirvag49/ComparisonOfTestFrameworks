@@ -6,7 +6,7 @@ using OpenQA.Selenium.Chrome;
 namespace NUnitTests.WebGui.Simple
 {
     [TestFixture]
-    [Parallelizable(ParallelScope.All)]
+    [Parallelizable(ParallelScope.Children)]
     public class Tests
     {
         /// <summary>

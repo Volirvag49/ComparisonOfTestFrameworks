@@ -6,7 +6,9 @@ using NUnit.Framework;
 namespace NUnitTests.Parallelism
 {
     /// <summary>
-    /// Children - указывает, что потомки теста могут выполняться параллельно друг другу.
+    /// Children - запускает параллельно все дочерние элементы,
+    /// независимо от того, являются ли они
+    /// TestFixture или TestMethod, но не включает Self
     /// </summary>
     [TestFixture]
     [Parallelizable(ParallelScope.Children)]

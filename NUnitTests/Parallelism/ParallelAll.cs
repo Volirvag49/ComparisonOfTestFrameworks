@@ -6,9 +6,10 @@ using NUnit.Framework;
 namespace NUnitTests.Parallelism
 {
     /// <summary>
+    /// 
     /// </summary>
     [TestFixture]
-    [Parallelizable(ParallelScope.Fixtures)]
+    [Parallelizable(ParallelScope.All)]
     public class ParallelAll
     {
         /// <summary>

@@ -8,6 +8,8 @@ namespace NUnitTests.Parallelism
     /// <summary>
     /// Self - указывает, что сам тест может выполняться параллельно
     /// с другими тестами, того же уровня
+    /// 1. TextFixtures
+    /// 2. TestMethod
     /// </summary>
     [TestFixture]
     [Parallelizable(ParallelScope.Self)]
